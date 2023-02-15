@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
 
 class Body extends Component {
     //state = {  } 
     render() { 
-        return (<h1>Hello World</h1>);
+        return (
+        <Container>
+        <h1>Hello World</h1>
+        </Container>
+        );
     }
 }
  
