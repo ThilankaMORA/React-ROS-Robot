@@ -10,7 +10,7 @@ class Header extends Component {
         <Container>
         <Navbar bg="dark" variant='dark' expand="lg" collapseOnSelect>
             
-            <Navbar.Brand href="#home">React ROS Robot</Navbar.Brand>
+            <header><Navbar.Brand href="#home">React ROS Robot</Navbar.Brand></header>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
@@ -19,7 +19,7 @@ class Header extends Component {
             </Nav>
             </Navbar.Collapse>
         </Navbar>
-        </Container>  
+        </Container> 
       );
     }
 }

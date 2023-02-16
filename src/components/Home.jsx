@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import Connection from './Connection';
 
 class Home extends Component {
-    state = {  } 
+    state = {};
+
     render() { 
         return (
         <main>
-        <h1>Home</h1>
+        <h1 className='text-center mt-3'>Robot Control Page</h1>
+        <Connection/>
         </main>
         );
     }
