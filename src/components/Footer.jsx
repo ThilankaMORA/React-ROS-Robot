@@ -5,8 +5,8 @@ class Footer extends Component {
     //state = {  } 
     render() { 
         return (
-        <Container>
-        <p>Footer</p>
+        <Container className='text-center'>
+        <p>Arimac Lanka Pvt. Ltd. &copy; 2023</p>
         </Container>
         );
     }
