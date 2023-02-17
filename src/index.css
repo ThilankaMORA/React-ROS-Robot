@@ -17,5 +17,19 @@ main {
 }
 
 header{
-  padding-left: 10px;
+  padding-left: 20px;
+}
+
+.alert-custom-red {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: red;
+}
+
+.alert-custom-green {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: green;
 }
