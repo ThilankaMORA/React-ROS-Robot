@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Alert, Container } from 'react-bootstrap';
+import { Alert } from 'react-bootstrap';
+import Config from '../scripts/config';
 
 class Connection extends Component {
     state = { connected: false, ros:null };
@@ -21,9 +22,25 @@ class Connection extends Component {
         this.state.ros.on("close", () => {
             console.log("connection is closed!");
             this.setState({connected:false});
+       
+        setTimeout(() => {
+            try {
+                this.state.ros.connect("ws://"+Config.ROSBRIDGE_SERVER_IP+":"+Config.ROSBRIDGE_SERVER_PORT+"");
+                } catch (error) {
+                    console.log("connection problem");
+                }
+        }, Config.RECONNECTION_TIME);
+
         });
+
+        try {
+            this.state.ros.connect("ws://"+Config.ROSBRIDGE_SERVER_IP+":"+Config.ROSBRIDGE_SERVER_PORT+"");
+            } catch (error) {
+                console.log("connection problem");
+            }
+        
     } 
-    
+
     render() { 
         return (
         <div>
