@@ -22,6 +22,9 @@ class Home extends Component {
                     <Col>
                         <Teleoperation/>
                     </Col>
+                    <Col>
+                        <h3>Map Viewer</h3>
+                    </Col>
                    
                 </Row>
                 <Row>
@@ -30,7 +33,7 @@ class Home extends Component {
                         <RobotState/>
                     </Col>
                     <Col>
-                        <h1>map</h1>
+                       
                         <Map/>
                         
                     </Col>
