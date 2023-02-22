@@ -20,7 +20,6 @@ class Map extends Component {
 
         try {
             this.state.ros.connect("ws://"+Config.ROSBRIDGE_SERVER_IP+":"+Config.ROSBRIDGE_SERVER_PORT+"");
-            console.log("Here 2");
             
             } catch (error) {
                 console.log("connection problem");
