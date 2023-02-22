@@ -11,6 +11,7 @@ class Connection extends Component {
     }
 
     init_connection(){
+        
         this.state.ros = new window.ROSLIB.Ros();
         console.log(this.state.ros);
 
@@ -22,6 +23,7 @@ class Connection extends Component {
         this.state.ros.on("close", () => {
             console.log("connection is closed!");
             this.setState({connected:false});
+
        
         setTimeout(() => {
             try {

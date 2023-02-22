@@ -16,6 +16,14 @@ main {
   min-height: 80vh;
 }
 
+footer {
+  position:absolute;
+  left:0;
+  bottom: 0;
+  right:0;
+  padding-bottom: 60px;
+}
+
 header{
   padding-left: 20px;
 }
